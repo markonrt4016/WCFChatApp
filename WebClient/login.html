@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+  <title>Web chat</title>
+  <link rel="stylesheet" href="./bootstrap.min.css">
+  <link href="./fontawesome-free-5.8.2-web/css/all.css" rel="stylesheet">
+</head>
+
+
+<body>
+  <!-- NAV -->
+
+  <nav id="navigacija" class="navbar navbar-dark bg-primary navbar-expand">
+    <a class="navbar-brand" href="#">
+      Web chat
+    </a>
+  </nav>
+  <!-- END OF NAV -->
+
+  <div id="sadrzaj">
+    <div class="row mt-3">
+      <form class="col-6 offset-3 justify-content-center text-center row">
+        <i class="fas fa-user fa-7x mb-3 text-primary col-12"></i>
+        <input type="text" id="username" class="form-control col-7" placeholder="Korisničko ime" required autofocus />
+        <input type="password" id="password" class="form-control mt-1 col-7" placeholder="Lozinka" required />
+        <a id="btnPrijava" class="btn btn-lg btn-primary btn-block text-white mt-3 col-6">Prijavi se</a>
+      </form>
+    </div>
+  </div>
+
+
+  <div class="bg-primary text-white mt-5 container-fluid">
+    <div class="row mt-5">
+      <div class="col-lg-4 col-sm-6 col-md-4 mt-3">
+        <p class="lead text-center font-weight-bold">
+          markonrt-40/16 &copy; 2019
+        </p>
+      </div>
+      <div class="col-lg-4 col-sm-4 offset-sm-6 offset-md-4 col-md-4 mt-3 offset-lg-4">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">
+              <i class="fab icon fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">
+              <i class="fab icon fa-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">
+              <i class="fab icon fa-instagram"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">
+              <i class="fab icon fa-youtube"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!--MODAL ZAHTEVAJ PRISTUP GRUPI-->
+
+  <!-- Modal za slanje zahteva-->
+  <div class="modal fade" id="ModalZahtev" tabindex="-1" role="dialog" aria-labelledby="ModalZahtevLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+
+          <h5 class="modal-title" id="ModalZahtevLabel">Odaberite grupu kojoj želite da se pridružite</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+
+        </div>
+
+        <div class="modal-body">
+          <div id="grupe">
+
+          </div>
+          <h4>Grupe u kojima ste:</h4>
+          <div id="grupeUkojimaJeste">
+
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <a class="btn btn-secondary text-white" data-dismiss="modal">Odustani</a>
+          <a id="btnPosaljiZahtev" class="btn btn-primary text-white">Pošalji zahtev</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--Modal za napustanje grupe-->
+  <div class="modal fade" id="ModalNapustanje" tabindex="-1" role="dialog" aria-labelledby="ModalNapustanjeLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+
+          <h5 class="modal-title" id="ModalZahtevLabel">Odaberite grupu kojoj želite da napustite</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+
+        </div>
+
+        <div class="modal-body">
+          <h4>Grupe u kojima ste:</h4>
+          <div id="grupeNapustanje">
+
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <a class="btn btn-secondary text-white" data-dismiss="modal">Odustani</a>
+          <a id="btnNapustanjeGrupe" class="btn btn-primary text-white">Napusti grupu</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- JS -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+  <script>
+
+    $('#btnPrijava').click(UlogujKorisnika);
+
+    //let korisnik = {KorisnickoIme: "", Lozinka: ""};
+    let idIntervala;
+
+    function UlogujKorisnika() {
+      let username = $('#username').val();
+      let password = $('#password').val();
+
+      $.ajax({
+        url: "http://localhost:8733/Design_Time_Addresses/Servis/Service1/web/WebUlogujKorisnika",
+        method: "POST",
+        data: {
+          username: username,
+          password: password
+        },
+        success: function (response) {
+          localStorage.setItem('username', JSON.stringify(response.KorisnickoIme));
+          localStorage.setItem('password', JSON.stringify(response.Lozinka));
+          localStorage.setItem('id', JSON.stringify(response.Id));
+          
+
+          UspesnoLogovanje();
+
+        },
+        error: function (jqrXH, response) {
+          alert("Ne postoji korisnik sa ovim podacima!")
+        }
+      });
+    }
+
+
+    function UspesnoLogovanje() {
+      let navigacija = $('#navigacija');
+      let sadrzaj = $('#sadrzaj');
+
+
+      navigacija.html(`<a class="navbar-brand" href="#">
+            Web chat - ulogovani ste kao: ${localStorage.getItem('username')}
+        </a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a id="btnZahtev" class="nav-link" href="#" data-toggle="modal" data-target="#ModalZahtev">
+                    <i class="fas fa-layer-group mr-2"></i>Zahtevaj pristup grupi
+                </a>
+            </li>
+            <li class="nav-item">
+                <a id="btnNapusti" class="nav-link" href="#" data-toggle="modal" data-target="#ModalNapustanje">
+                    <i class="fas fa-ban mr-2"></i>Napusti grupu
+                </a>
+            </li>
+            <li class="nav-item">
+                <a id="btnOdjava" class="nav-link" href="#">
+                    <i class="fas fa-sign-out-alt mr-2"></i>Izloguj se
+                </a>
+            </li>
+        </ul>`);
+
+      sadrzaj.html(`
+    <div class="container-fluid row mt-3">
+        <div class="col-6 offset-lg-3 offset-md-0">
+            <h2>Poruke korisnika:</h2>
+          <div id="poruke">
+            <p class="word-wrap">
+                Pozdarv....Pozdarv....Pozdarv....Pozdarv....Pozdarv....Pozdarv....Pozdarv....Pozdarv....Pozdarv....Pozd
+                arv....Pozdarv....Pozdarv....Pozdarv....Pozdarv....Pozdarv....Pozdarv....
+                Pozdarv....Pozdarv....Pozdarv....Pozdarv....Pozdarv....Pozdarv....Pozdarv....Pozdarv....
+                Pozdarv....Pozdarv....Pozdarv....Pozdarv....Pozdarv....Pozdarv....Pozdarv....Pozdarv....
+                Pozdarv....Pozdarv....Pozdarv....Pozdarv....Pozdarv....Pozdarv....Pozdarv....Pozdarv....
+                Pozdarv....Pozdarv....Pozdarv....Pozdarv....Pozdarv....Pozdarv....Pozdarv....Pozdarv....
+                Pozdarv....Pozdarv....Pozdarv....Pozdarv....Pozdarv....Pozdarv....Pozdarv....Pozdarv....
+            </p>
+          </div>
+            <div class="row pl-1">
+                <input id="txtPoruka" type="text" class="form-control col-8" id="poruka" placeholder="Unesite poruku...">
+                <a id="btnPosalji" href="#" class="btn btn-primary col-3 offset-1">Pošalji</a>
+            </div>
+        </div>
+    </div>`);
+
+
+      $('#btnZahtev').click(prikaziGrupe);
+      $('#btnPosalji').click(posaljiPoruku);
+      $('#btnOdjava').click(OdjavaKorisnika);
+      $('#btnNapusti').click(NapustanjeGrupe)
+
+      idIntervala = setInterval(function () { VratiPoruke(); }, 300);
+    }
+
+    function prikaziGrupe() {
+      let grupe = $('#grupe');
+      grupe.html("");
+      let grupeUkojimaJeste = $('#grupeUkojimaJeste');
+      grupeUkojimaJeste.html('')
+      $.ajax({
+        url: "http://localhost:8733/Design_Time_Addresses/Servis/Service1/web/WebVratiGrupeUkojimaNije",
+        method: "POST",
+        data: { Id: localStorage.getItem('id') },
+        success: function (response) {
+          console.log(response)
+          for (let i = 0; i < response.length; i++) {
+            grupe.append(`<div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="${response[i].Id}">
+                              <label class="form-check-label" id="lbl${response[i].Id}">
+                                    Ime grupe: ${response[i].Naziv} 
+                              </label>
+                              </div>`)
+          }
+          if (response.length == 0)
+            grupe.html('<h3>Poslali ste zahteve za sve grupe...</h3>');
+        },
+        error: function (jqrXH, response) {
+          alert("Greska u komunikaciji!" + jqrXH.status);
+        }
+      });
+
+      $.ajax({
+        url: "http://localhost:8733/Design_Time_Addresses/Servis/Service1/web/WebVratiGrupeUkojimaJeste",
+        method: "POST",
+        data: { id: localStorage.getItem('id') },
+        success: function (response) {
+          console.log(response)
+          for (let i = 0; i < response.length; i++) {
+            grupeUkojimaJeste.append(`<p>Ime grupe: ${response[i].Naziv}</p>`)
+          }
+        },
+        error: function (jqrXH, response) {
+          alert("Greska u komunikaciji!" + jqrXH.status);
+        }
+      });
+
+    }
+
+    function posaljiPoruku() {
+      // let poruke = $('#poruke');
+      // poruke.html('');
+      let porukaSlanje = $('#txtPoruka').val();
+
+
+      //slanje ka serveru int idPosiljalac, string tekst
+      $.ajax({
+        url: "http://localhost:8733/Design_Time_Addresses/Servis/Service1/web/WebPrimiPoruku",
+        method: "POST",
+        data: {
+          IdPosiljalac: localStorage.getItem('id'),
+          Tekst: porukaSlanje
+        },
+        success: function (response) {
+        },
+        error: function (jqrXH, response) {
+          alert("Greska u komunikaciji! primljeno" + jqrXH.status)
+        }
+      });
+
+    }
+
+
+    function OdjavaKorisnika() {
+
+      localStorage.setItem('username', null);
+      localStorage.setItem('password', null);
+      localStorage.setItem('id', null)
+
+      clearInterval(idIntervala);
+      alert("Odjavljen korisnik...")
+
+      let navigacija = $('#navigacija');
+      let sadrzaj = $('#sadrzaj');
+
+
+      navigacija.html(` <a class="navbar-brand" href="#">
+      Web chat
+    </a>`);
+
+      sadrzaj.html(`
+      <div class="row mt-3">
+      <form class="col-6 offset-3 justify-content-center text-center row">
+        <i class="fas fa-user fa-7x mb-3 text-primary col-12"></i>
+        <input type="text" id="username" class="form-control col-7" placeholder="Korisničko ime" required autofocus />
+        <input type="password" id="password" class="form-control mt-1 col-7" placeholder="Lozinka" required />
+        <a id="btnPrijava" class="btn btn-lg btn-primary btn-block text-white mt-3 col-6">Prijavi se</a>
+      </form>
+    </div>`);
+
+      $('#btnPrijava').click(UlogujKorisnika);
+    }
+
+
+
+    function VratiPoruke() {
+      let poruke = $('#poruke');
+      if (localStorage.getItem('id') != null) {
+        $.ajax({
+          url: "http://localhost:8733/Design_Time_Addresses/Servis/Service1/web/VratiPoruke",
+          method: "GET",
+          data: {
+            idKorisnika: localStorage.getItem('id')
+          },
+          success: function (response) {
+            let ispis = "";
+            for (let i = 0; i < response.length; i++) {
+              ispis += `<p>${response[i].IspisPoruke}</p>`;
+            }
+            if (ispis != poruke.html()) {
+              poruke.html(ispis)
+            }
+
+          },
+          error: function (jqrXH, response) {
+            alert("Greska u komunikaciji!" + jqrXH.status)
+          }
+        });
+      }
+    }
+
+
+    window.onload = function () {
+      if (localStorage.getItem('id') != null && localStorage.getItem('id') != 'null') {
+        UspesnoLogovanje();
+      }
+    }
+
+    let btnPosaljiZahtev = $('#btnPosaljiZahtev');
+
+    btnPosaljiZahtev.click(SlanjeZahteva);
+
+    function SlanjeZahteva() {
+
+      $("input[type=checkbox]").each(function () {
+
+        if ($(this).prop('checked')) {
+
+
+          $.ajax({
+            url: "http://localhost:8733/Design_Time_Addresses/Servis/Service1/web/WebPrimanjeZahtevaZaGrupu",
+            method: "POST",
+            data: {
+              idKorisnika: localStorage.getItem('id'),
+              idGrupe: $(this).attr('id')
+            },
+            success: function (response) {
+            },
+            error: function (jqrXH, response) {
+              alert("Greska u komunikaciji!" + jqrXH.status)
+            }
+          });
+          $('#lbl' + $(this).attr('id')).remove();
+          $(this).remove();
+        }
+      });
+    }
+
+
+    function NapustanjeGrupe() {
+      let grupeNapustanje = $('#grupeNapustanje');
+      grupeNapustanje.html('');
+
+      $.ajax({
+        url: "http://localhost:8733/Design_Time_Addresses/Servis/Service1/web/WebVratiGrupeUkojimaJeste",
+        method: "POST",
+        data: { id: localStorage.getItem('id') },
+        success: function (response) {
+          console.log(response)
+          for (let i = 0; i < response.length; i++) {
+            grupeNapustanje.append(`<div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="${response[i].Id}">
+                              <label class="form-check-label" id="lbl${response[i].Id}">
+                                    Ime grupe: ${response[i].Naziv} 
+                              </label>
+                              </div>`);
+          }
+        },
+        error: function (jqrXH, response) {
+          alert("Greska u komunikaciji!" + jqrXH.status);
+        }
+      });
+    }
+
+    function NapustiOdabraneGrupe() {
+      $("input[type=checkbox]").each(function () {
+
+        if ($(this).prop('checked')) {
+
+
+          $.ajax({
+            url: "http://localhost:8733/Design_Time_Addresses/Servis/Service1/web/WebIzlazakIzGrupe",
+            method: "POST",
+            data: {
+              idKorisnika: localStorage.getItem('id'),
+              idGrupe: $(this).attr('id')
+            },
+            success: function (response) {
+            },
+            error: function (jqrXH, response) {
+              alert("Greska u komunikaciji!" + jqrXH.status)
+            }
+          });
+          $('#lbl' + $(this).attr('id')).remove();
+          $(this).remove();
+        }
+      });
+    }
+
+    let btnNapustanjeGrupe = $('#btnNapustanjeGrupe');
+
+    btnNapustanjeGrupe.click(NapustiOdabraneGrupe)
+
+
+  </script>
+
+
+</body>
+
+</html>

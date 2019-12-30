@@ -1,0 +1,41 @@
+C:\Users\Marko\Desktop\Dopisivanje\Servis\bin\Debug\Servis.dll.config
+C:\Users\Marko\Desktop\Dopisivanje\Servis\bin\Debug\Servis.dll
+C:\Users\Marko\Desktop\Dopisivanje\Servis\bin\Debug\Servis.pdb
+C:\Users\Marko\Desktop\Dopisivanje\Servis\obj\Debug\Servis.csprojAssemblyReference.cache
+C:\Users\Marko\Desktop\Dopisivanje\Servis\obj\Debug\Servis.csproj.CoreCompileInputs.cache
+C:\Users\Marko\Desktop\Dopisivanje\Servis\obj\Debug\Servis.dll
+C:\Users\Marko\Desktop\Dopisivanje\Servis\obj\Debug\Servis.pdb
+B:\TVP - Projects\Dopisivanje\Servis\bin\Debug\Servis.dll.config
+B:\TVP - Projects\Dopisivanje\Servis\bin\Debug\Servis.dll
+B:\TVP - Projects\Dopisivanje\Servis\bin\Debug\Servis.pdb
+B:\TVP - Projects\Dopisivanje\Servis\obj\Debug\Servis.csprojAssemblyReference.cache
+B:\TVP - Projects\Dopisivanje\Servis\obj\Debug\Servis.csproj.CoreCompileInputs.cache
+B:\TVP - Projects\Dopisivanje\Servis\obj\Debug\Servis.dll
+B:\TVP - Projects\Dopisivanje\Servis\obj\Debug\Servis.pdb
+C:\Users\Main 402\Desktop\temp\Dopisivanje\Servis\bin\Debug\Servis.dll.config
+C:\Users\Main 402\Desktop\temp\Dopisivanje\Servis\bin\Debug\Servis.dll
+C:\Users\Main 402\Desktop\temp\Dopisivanje\Servis\bin\Debug\Servis.pdb
+C:\Users\Main 402\Desktop\temp\Dopisivanje\Servis\obj\Debug\Servis.csprojAssemblyReference.cache
+C:\Users\Main 402\Desktop\temp\Dopisivanje\Servis\obj\Debug\Servis.csproj.CoreCompileInputs.cache
+C:\Users\Main 402\Desktop\temp\Dopisivanje\Servis\obj\Debug\Servis.dll
+C:\Users\Main 402\Desktop\temp\Dopisivanje\Servis\obj\Debug\Servis.pdb
+C:\Users\Marko\Desktop\temp\Dopisivanje\Servis\bin\Debug\Servis.dll.config
+C:\Users\Marko\Desktop\temp\Dopisivanje\Servis\bin\Debug\Servis.dll
+C:\Users\Marko\Desktop\temp\Dopisivanje\Servis\bin\Debug\Servis.pdb
+C:\Users\Marko\Desktop\temp\Dopisivanje\Servis\obj\Debug\Servis.csprojAssemblyReference.cache
+C:\Users\Marko\Desktop\temp\Dopisivanje\Servis\obj\Debug\Servis.csproj.CoreCompileInputs.cache
+C:\Users\Marko\Desktop\temp\Dopisivanje\Servis\obj\Debug\Servis.dll
+C:\Users\Marko\Desktop\temp\Dopisivanje\Servis\obj\Debug\Servis.pdb
+C:\Users\Marko\Desktop\pokusajHostovanja2\Dopisivanje\Servis\bin\Debug\Servis.dll.config
+C:\Users\Marko\Desktop\pokusajHostovanja2\Dopisivanje\Servis\bin\Debug\Servis.dll
+C:\Users\Marko\Desktop\pokusajHostovanja2\Dopisivanje\Servis\bin\Debug\Servis.pdb
+C:\Users\Marko\Desktop\pokusajHostovanja2\Dopisivanje\Servis\obj\Debug\Servis.csprojAssemblyReference.cache
+C:\Users\Marko\Desktop\pokusajHostovanja2\Dopisivanje\Servis\obj\Debug\Servis.csproj.CoreCompileInputs.cache
+C:\Users\Marko\Desktop\pokusajHostovanja2\Dopisivanje\Servis\obj\Debug\Servis.dll
+C:\Users\Marko\Desktop\pokusajHostovanja2\Dopisivanje\Servis\obj\Debug\Servis.pdb
+I:\pokusajHostovanja2\Dopisivanje\Servis\bin\Debug\Servis.dll.config
+I:\pokusajHostovanja2\Dopisivanje\Servis\bin\Debug\Servis.dll
+I:\pokusajHostovanja2\Dopisivanje\Servis\bin\Debug\Servis.pdb
+I:\pokusajHostovanja2\Dopisivanje\Servis\obj\Debug\Servis.csprojAssemblyReference.cache
+I:\pokusajHostovanja2\Dopisivanje\Servis\obj\Debug\Servis.dll
+I:\pokusajHostovanja2\Dopisivanje\Servis\obj\Debug\Servis.pdb

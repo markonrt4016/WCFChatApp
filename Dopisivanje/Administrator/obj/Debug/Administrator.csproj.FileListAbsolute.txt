@@ -1,0 +1,88 @@
+E:\TVP projekti\Administrator\Administrator\bin\Debug\Administrator.exe.config
+E:\TVP projekti\Administrator\Administrator\bin\Debug\Administrator.exe
+E:\TVP projekti\Administrator\Administrator\bin\Debug\Administrator.pdb
+E:\TVP projekti\Administrator\Administrator\obj\Debug\Administrator.csprojResolveAssemblyReference.cache
+E:\TVP projekti\Administrator\Administrator\obj\Debug\Administrator.FrmAdminPanel.resources
+E:\TVP projekti\Administrator\Administrator\obj\Debug\Administrator.FrmPrijava.resources
+E:\TVP projekti\Administrator\Administrator\obj\Debug\Administrator.FrmZahtevi.resources
+E:\TVP projekti\Administrator\Administrator\obj\Debug\Administrator.Properties.Resources.resources
+E:\TVP projekti\Administrator\Administrator\obj\Debug\Administrator.csproj.GenerateResource.Cache
+E:\TVP projekti\Administrator\Administrator\obj\Debug\Administrator.csproj.CoreCompileInputs.cache
+E:\TVP projekti\Administrator\Administrator\obj\Debug\Administrator.exe
+E:\TVP projekti\Administrator\Administrator\obj\Debug\Administrator.pdb
+C:\Users\Marko\Desktop\Dopisivanje\Administrator\bin\Debug\Administrator.exe.config
+C:\Users\Marko\Desktop\Dopisivanje\Administrator\bin\Debug\Administrator.exe
+C:\Users\Marko\Desktop\Dopisivanje\Administrator\bin\Debug\Administrator.pdb
+C:\Users\Marko\Desktop\Dopisivanje\Administrator\obj\Debug\Administrator.csprojAssemblyReference.cache
+C:\Users\Marko\Desktop\Dopisivanje\Administrator\obj\Debug\Administrator.FrmAdminPanel.resources
+C:\Users\Marko\Desktop\Dopisivanje\Administrator\obj\Debug\Administrator.FrmPrijava.resources
+C:\Users\Marko\Desktop\Dopisivanje\Administrator\obj\Debug\Administrator.FrmZahtevi.resources
+C:\Users\Marko\Desktop\Dopisivanje\Administrator\obj\Debug\Administrator.Properties.Resources.resources
+C:\Users\Marko\Desktop\Dopisivanje\Administrator\obj\Debug\Administrator.csproj.GenerateResource.cache
+C:\Users\Marko\Desktop\Dopisivanje\Administrator\obj\Debug\Administrator.csproj.CoreCompileInputs.cache
+C:\Users\Marko\Desktop\Dopisivanje\Administrator\obj\Debug\Administrator.exe
+C:\Users\Marko\Desktop\Dopisivanje\Administrator\obj\Debug\Administrator.pdb
+B:\TVP - Projects\Dopisivanje\Administrator\bin\Debug\Administrator.exe.config
+B:\TVP - Projects\Dopisivanje\Administrator\bin\Debug\Administrator.exe
+B:\TVP - Projects\Dopisivanje\Administrator\bin\Debug\Administrator.pdb
+B:\TVP - Projects\Dopisivanje\Administrator\obj\Debug\Administrator.csprojAssemblyReference.cache
+B:\TVP - Projects\Dopisivanje\Administrator\obj\Debug\Administrator.FrmAdminPanel.resources
+B:\TVP - Projects\Dopisivanje\Administrator\obj\Debug\Administrator.FrmPrijava.resources
+B:\TVP - Projects\Dopisivanje\Administrator\obj\Debug\Administrator.FrmZahtevi.resources
+B:\TVP - Projects\Dopisivanje\Administrator\obj\Debug\Administrator.Properties.Resources.resources
+B:\TVP - Projects\Dopisivanje\Administrator\obj\Debug\Administrator.csproj.GenerateResource.cache
+B:\TVP - Projects\Dopisivanje\Administrator\obj\Debug\Administrator.csproj.CoreCompileInputs.cache
+B:\TVP - Projects\Dopisivanje\Administrator\obj\Debug\Administrator.exe
+B:\TVP - Projects\Dopisivanje\Administrator\obj\Debug\Administrator.pdb
+B:\TVP - Projects\Dopisivanje\Administrator\obj\Debug\Administrator.FrmGrupaKorisnikManuelno.resources
+C:\Users\Main 402\Desktop\temp\Dopisivanje\Administrator\obj\Debug\Administrator.csprojAssemblyReference.cache
+C:\Users\Main 402\Desktop\temp\Dopisivanje\Administrator\obj\Debug\Administrator.FrmAdminPanel.resources
+C:\Users\Main 402\Desktop\temp\Dopisivanje\Administrator\obj\Debug\Administrator.FrmGrupaKorisnikManuelno.resources
+C:\Users\Main 402\Desktop\temp\Dopisivanje\Administrator\obj\Debug\Administrator.FrmPrijava.resources
+C:\Users\Main 402\Desktop\temp\Dopisivanje\Administrator\obj\Debug\Administrator.FrmZahtevi.resources
+C:\Users\Main 402\Desktop\temp\Dopisivanje\Administrator\obj\Debug\Administrator.Properties.Resources.resources
+C:\Users\Main 402\Desktop\temp\Dopisivanje\Administrator\obj\Debug\Administrator.csproj.GenerateResource.cache
+C:\Users\Main 402\Desktop\temp\Dopisivanje\Administrator\obj\Debug\Administrator.csproj.CoreCompileInputs.cache
+C:\Users\Main 402\Desktop\temp\Dopisivanje\Administrator\obj\Debug\Administrator.exe
+C:\Users\Main 402\Desktop\temp\Dopisivanje\Administrator\obj\Debug\Administrator.pdb
+C:\Users\Main 402\Desktop\temp\Dopisivanje\Administrator\bin\Debug\Administrator.exe.config
+C:\Users\Main 402\Desktop\temp\Dopisivanje\Administrator\bin\Debug\Administrator.exe
+C:\Users\Main 402\Desktop\temp\Dopisivanje\Administrator\bin\Debug\Administrator.pdb
+C:\Users\Marko\Desktop\temp\Dopisivanje\Administrator\bin\Debug\Administrator.exe.config
+C:\Users\Marko\Desktop\temp\Dopisivanje\Administrator\bin\Debug\Administrator.exe
+C:\Users\Marko\Desktop\temp\Dopisivanje\Administrator\bin\Debug\Administrator.pdb
+C:\Users\Marko\Desktop\temp\Dopisivanje\Administrator\obj\Debug\Administrator.csprojAssemblyReference.cache
+C:\Users\Marko\Desktop\temp\Dopisivanje\Administrator\obj\Debug\Administrator.FrmAdminPanel.resources
+C:\Users\Marko\Desktop\temp\Dopisivanje\Administrator\obj\Debug\Administrator.FrmGrupaKorisnikManuelno.resources
+C:\Users\Marko\Desktop\temp\Dopisivanje\Administrator\obj\Debug\Administrator.FrmPrijava.resources
+C:\Users\Marko\Desktop\temp\Dopisivanje\Administrator\obj\Debug\Administrator.FrmZahtevi.resources
+C:\Users\Marko\Desktop\temp\Dopisivanje\Administrator\obj\Debug\Administrator.Properties.Resources.resources
+C:\Users\Marko\Desktop\temp\Dopisivanje\Administrator\obj\Debug\Administrator.csproj.GenerateResource.cache
+C:\Users\Marko\Desktop\temp\Dopisivanje\Administrator\obj\Debug\Administrator.csproj.CoreCompileInputs.cache
+C:\Users\Marko\Desktop\temp\Dopisivanje\Administrator\obj\Debug\Administrator.exe
+C:\Users\Marko\Desktop\temp\Dopisivanje\Administrator\obj\Debug\Administrator.pdb
+C:\Users\Marko\Desktop\pokusajHostovanja2\Dopisivanje\Administrator\bin\Debug\Administrator.exe.config
+C:\Users\Marko\Desktop\pokusajHostovanja2\Dopisivanje\Administrator\bin\Debug\Administrator.exe
+C:\Users\Marko\Desktop\pokusajHostovanja2\Dopisivanje\Administrator\bin\Debug\Administrator.pdb
+C:\Users\Marko\Desktop\pokusajHostovanja2\Dopisivanje\Administrator\obj\Debug\Administrator.csprojAssemblyReference.cache
+C:\Users\Marko\Desktop\pokusajHostovanja2\Dopisivanje\Administrator\obj\Debug\Administrator.FrmAdminPanel.resources
+C:\Users\Marko\Desktop\pokusajHostovanja2\Dopisivanje\Administrator\obj\Debug\Administrator.FrmGrupaKorisnikManuelno.resources
+C:\Users\Marko\Desktop\pokusajHostovanja2\Dopisivanje\Administrator\obj\Debug\Administrator.FrmPrijava.resources
+C:\Users\Marko\Desktop\pokusajHostovanja2\Dopisivanje\Administrator\obj\Debug\Administrator.FrmZahtevi.resources
+C:\Users\Marko\Desktop\pokusajHostovanja2\Dopisivanje\Administrator\obj\Debug\Administrator.Properties.Resources.resources
+C:\Users\Marko\Desktop\pokusajHostovanja2\Dopisivanje\Administrator\obj\Debug\Administrator.csproj.GenerateResource.cache
+C:\Users\Marko\Desktop\pokusajHostovanja2\Dopisivanje\Administrator\obj\Debug\Administrator.csproj.CoreCompileInputs.cache
+C:\Users\Marko\Desktop\pokusajHostovanja2\Dopisivanje\Administrator\obj\Debug\Administrator.exe
+C:\Users\Marko\Desktop\pokusajHostovanja2\Dopisivanje\Administrator\obj\Debug\Administrator.pdb
+I:\pokusajHostovanja2\Dopisivanje\Administrator\bin\Debug\Administrator.exe.config
+I:\pokusajHostovanja2\Dopisivanje\Administrator\bin\Debug\Administrator.exe
+I:\pokusajHostovanja2\Dopisivanje\Administrator\bin\Debug\Administrator.pdb
+I:\pokusajHostovanja2\Dopisivanje\Administrator\obj\Debug\Administrator.csprojAssemblyReference.cache
+I:\pokusajHostovanja2\Dopisivanje\Administrator\obj\Debug\Administrator.FrmAdminPanel.resources
+I:\pokusajHostovanja2\Dopisivanje\Administrator\obj\Debug\Administrator.FrmGrupaKorisnikManuelno.resources
+I:\pokusajHostovanja2\Dopisivanje\Administrator\obj\Debug\Administrator.FrmPrijava.resources
+I:\pokusajHostovanja2\Dopisivanje\Administrator\obj\Debug\Administrator.FrmZahtevi.resources
+I:\pokusajHostovanja2\Dopisivanje\Administrator\obj\Debug\Administrator.Properties.Resources.resources
+I:\pokusajHostovanja2\Dopisivanje\Administrator\obj\Debug\Administrator.csproj.GenerateResource.cache
+I:\pokusajHostovanja2\Dopisivanje\Administrator\obj\Debug\Administrator.exe
+I:\pokusajHostovanja2\Dopisivanje\Administrator\obj\Debug\Administrator.pdb

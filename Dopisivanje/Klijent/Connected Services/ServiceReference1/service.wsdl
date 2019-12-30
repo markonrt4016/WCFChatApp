@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.microsoft.com/Message" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Servis" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_PrimiPoruku_InputMessage">
+    <wsdl:part name="parameters" element="tns:PrimiPoruku" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PrimiPoruku_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PrimiPorukuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WebPrimiPoruku_InputMessage">
+    <wsdl:part name="parameters" element="tns:WebPrimiPoruku" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WebPrimiPoruku_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WebPrimiPorukuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_VratiPoruke_InputMessage">
+    <wsdl:part name="parameters" element="tns:VratiPoruke" />
+  </wsdl:message>
+  <wsdl:message name="IService1_VratiPoruke_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VratiPorukeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WebUlogujKorisnika_InputMessage">
+    <wsdl:part name="parameters" element="tns:WebUlogujKorisnika" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WebUlogujKorisnika_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WebUlogujKorisnikaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UlogujKorisnika_InputMessage">
+    <wsdl:part name="parameters" element="tns:UlogujKorisnika" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UlogujKorisnika_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UlogujKorisnikaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DodajKorisnika_InputMessage">
+    <wsdl:part name="parameters" element="tns:DodajKorisnika" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DodajKorisnika_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DodajKorisnikaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_IzmeniKorisnika_InputMessage">
+    <wsdl:part name="parameters" element="tns:IzmeniKorisnika" />
+  </wsdl:message>
+  <wsdl:message name="IService1_IzmeniKorisnika_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IzmeniKorisnikaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ObrisiKorisnika_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObrisiKorisnika" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ObrisiKorisnika_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObrisiKorisnikaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DodajGrupu_InputMessage">
+    <wsdl:part name="parameters" element="tns:DodajGrupu" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DodajGrupu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DodajGrupuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_IzmeniGrupu_InputMessage">
+    <wsdl:part name="parameters" element="tns:IzmeniGrupu" />
+  </wsdl:message>
+  <wsdl:message name="IService1_IzmeniGrupu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IzmeniGrupuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ObrisiGrupu_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObrisiGrupu" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ObrisiGrupu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObrisiGrupuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_VratiGrupe_InputMessage">
+    <wsdl:part name="parameters" element="tns:VratiGrupe" />
+  </wsdl:message>
+  <wsdl:message name="IService1_VratiGrupe_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VratiGrupeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PrimanjeZahtevaZaGrupu_InputMessage">
+    <wsdl:part name="parameters" element="tns:PrimanjeZahtevaZaGrupu" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PrimanjeZahtevaZaGrupu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PrimanjeZahtevaZaGrupuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_VratiZahteveZaGrupu_InputMessage">
+    <wsdl:part name="parameters" element="tns:VratiZahteveZaGrupu" />
+  </wsdl:message>
+  <wsdl:message name="IService1_VratiZahteveZaGrupu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VratiZahteveZaGrupuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_OdobravanjeZahtevaZaGrupu_InputMessage">
+    <wsdl:part name="parameters" element="tns:OdobravanjeZahtevaZaGrupu" />
+  </wsdl:message>
+  <wsdl:message name="IService1_OdobravanjeZahtevaZaGrupu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OdobravanjeZahtevaZaGrupuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RucnoDodavanjeKorisnikaUGrupu_InputMessage">
+    <wsdl:part name="parameters" element="tns:RucnoDodavanjeKorisnikaUGrupu" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RucnoDodavanjeKorisnikaUGrupu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RucnoDodavanjeKorisnikaUGrupuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_IzlazakIzGrupe_InputMessage">
+    <wsdl:part name="parameters" element="tns:IzlazakIzGrupe" />
+  </wsdl:message>
+  <wsdl:message name="IService1_IzlazakIzGrupe_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IzlazakIzGrupeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_VratiKorisnike_InputMessage">
+    <wsdl:part name="parameters" element="tns:VratiKorisnike" />
+  </wsdl:message>
+  <wsdl:message name="IService1_VratiKorisnike_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VratiKorisnikeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_VratiGrupeUKojimaNije_InputMessage">
+    <wsdl:part name="parameters" element="tns:VratiGrupeUKojimaNije" />
+  </wsdl:message>
+  <wsdl:message name="IService1_VratiGrupeUKojimaNije_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VratiGrupeUKojimaNijeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WebVratiGrupeUKojimaNije_InputMessage">
+    <wsdl:part name="parameters" element="tns:WebVratiGrupeUKojimaNije" />
+  </wsdl:message>
+  <wsdl:message name="IService1_WebVratiGrupeUKojimaNije_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WebVratiGrupeUKojimaNijeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_VratiGrupeUKojimaJeste_InputMessage">
+    <wsdl:part name="parameters" element="tns:VratiGrupeUKojimaJeste" />
+  </wsdl:message>
+  <wsdl:message name="IService1_VratiGrupeUKojimaJeste_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VratiGrupeUKojimaJesteResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="PrimiPoruku">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/PrimiPoruku" message="tns:IService1_PrimiPoruku_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/PrimiPorukuResponse" message="tns:IService1_PrimiPoruku_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WebPrimiPoruku">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WebPrimiPoruku" message="tns:IService1_WebPrimiPoruku_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WebPrimiPorukuResponse" message="tns:IService1_WebPrimiPoruku_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VratiPoruke">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/VratiPoruke" message="tns:IService1_VratiPoruke_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/VratiPorukeResponse" message="tns:IService1_VratiPoruke_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WebUlogujKorisnika">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WebUlogujKorisnika" message="tns:IService1_WebUlogujKorisnika_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WebUlogujKorisnikaResponse" message="tns:IService1_WebUlogujKorisnika_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UlogujKorisnika">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UlogujKorisnika" message="tns:IService1_UlogujKorisnika_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UlogujKorisnikaResponse" message="tns:IService1_UlogujKorisnika_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DodajKorisnika">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DodajKorisnika" message="tns:IService1_DodajKorisnika_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DodajKorisnikaResponse" message="tns:IService1_DodajKorisnika_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IzmeniKorisnika">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/IzmeniKorisnika" message="tns:IService1_IzmeniKorisnika_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/IzmeniKorisnikaResponse" message="tns:IService1_IzmeniKorisnika_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObrisiKorisnika">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ObrisiKorisnika" message="tns:IService1_ObrisiKorisnika_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ObrisiKorisnikaResponse" message="tns:IService1_ObrisiKorisnika_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DodajGrupu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DodajGrupu" message="tns:IService1_DodajGrupu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DodajGrupuResponse" message="tns:IService1_DodajGrupu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IzmeniGrupu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/IzmeniGrupu" message="tns:IService1_IzmeniGrupu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/IzmeniGrupuResponse" message="tns:IService1_IzmeniGrupu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObrisiGrupu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ObrisiGrupu" message="tns:IService1_ObrisiGrupu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ObrisiGrupuResponse" message="tns:IService1_ObrisiGrupu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VratiGrupe">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/VratiGrupe" message="tns:IService1_VratiGrupe_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/VratiGrupeResponse" message="tns:IService1_VratiGrupe_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PrimanjeZahtevaZaGrupu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/PrimanjeZahtevaZaGrupu" message="tns:IService1_PrimanjeZahtevaZaGrupu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/PrimanjeZahtevaZaGrupuResponse" message="tns:IService1_PrimanjeZahtevaZaGrupu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VratiZahteveZaGrupu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/VratiZahteveZaGrupu" message="tns:IService1_VratiZahteveZaGrupu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/VratiZahteveZaGrupuResponse" message="tns:IService1_VratiZahteveZaGrupu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OdobravanjeZahtevaZaGrupu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/OdobravanjeZahtevaZaGrupu" message="tns:IService1_OdobravanjeZahtevaZaGrupu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/OdobravanjeZahtevaZaGrupuResponse" message="tns:IService1_OdobravanjeZahtevaZaGrupu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RucnoDodavanjeKorisnikaUGrupu">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/RucnoDodavanjeKorisnikaUGrupu" message="tns:IService1_RucnoDodavanjeKorisnikaUGrupu_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/RucnoDodavanjeKorisnikaUGrupuResponse" message="tns:IService1_RucnoDodavanjeKorisnikaUGrupu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IzlazakIzGrupe">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/IzlazakIzGrupe" message="tns:IService1_IzlazakIzGrupe_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/IzlazakIzGrupeResponse" message="tns:IService1_IzlazakIzGrupe_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VratiKorisnike">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/VratiKorisnike" message="tns:IService1_VratiKorisnike_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/VratiKorisnikeResponse" message="tns:IService1_VratiKorisnike_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VratiGrupeUKojimaNije">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/VratiGrupeUKojimaNije" message="tns:IService1_VratiGrupeUKojimaNije_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/VratiGrupeUKojimaNijeResponse" message="tns:IService1_VratiGrupeUKojimaNije_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WebVratiGrupeUKojimaNije">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/WebVratiGrupeUKojimaNije" message="tns:IService1_WebVratiGrupeUKojimaNije_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/WebVratiGrupeUKojimaNijeResponse" message="tns:IService1_WebVratiGrupeUKojimaNije_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VratiGrupeUKojimaJeste">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/VratiGrupeUKojimaJeste" message="tns:IService1_VratiGrupeUKojimaJeste_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/VratiGrupeUKojimaJesteResponse" message="tns:IService1_VratiGrupeUKojimaJeste_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="PrimiPoruku">
+      <soap:operation soapAction="http://tempuri.org/IService1/PrimiPoruku" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebPrimiPoruku">
+      <soap:operation soapAction="http://tempuri.org/IService1/WebPrimiPoruku" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VratiPoruke">
+      <soap:operation soapAction="http://tempuri.org/IService1/VratiPoruke" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebUlogujKorisnika">
+      <soap:operation soapAction="http://tempuri.org/IService1/WebUlogujKorisnika" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UlogujKorisnika">
+      <soap:operation soapAction="http://tempuri.org/IService1/UlogujKorisnika" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DodajKorisnika">
+      <soap:operation soapAction="http://tempuri.org/IService1/DodajKorisnika" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IzmeniKorisnika">
+      <soap:operation soapAction="http://tempuri.org/IService1/IzmeniKorisnika" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObrisiKorisnika">
+      <soap:operation soapAction="http://tempuri.org/IService1/ObrisiKorisnika" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DodajGrupu">
+      <soap:operation soapAction="http://tempuri.org/IService1/DodajGrupu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IzmeniGrupu">
+      <soap:operation soapAction="http://tempuri.org/IService1/IzmeniGrupu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObrisiGrupu">
+      <soap:operation soapAction="http://tempuri.org/IService1/ObrisiGrupu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VratiGrupe">
+      <soap:operation soapAction="http://tempuri.org/IService1/VratiGrupe" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PrimanjeZahtevaZaGrupu">
+      <soap:operation soapAction="http://tempuri.org/IService1/PrimanjeZahtevaZaGrupu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VratiZahteveZaGrupu">
+      <soap:operation soapAction="http://tempuri.org/IService1/VratiZahteveZaGrupu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OdobravanjeZahtevaZaGrupu">
+      <soap:operation soapAction="http://tempuri.org/IService1/OdobravanjeZahtevaZaGrupu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RucnoDodavanjeKorisnikaUGrupu">
+      <soap:operation soapAction="http://tempuri.org/IService1/RucnoDodavanjeKorisnikaUGrupu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IzlazakIzGrupe">
+      <soap:operation soapAction="http://tempuri.org/IService1/IzlazakIzGrupe" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VratiKorisnike">
+      <soap:operation soapAction="http://tempuri.org/IService1/VratiKorisnike" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VratiGrupeUKojimaNije">
+      <soap:operation soapAction="http://tempuri.org/IService1/VratiGrupeUKojimaNije" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebVratiGrupeUKojimaNije">
+      <soap:operation soapAction="http://tempuri.org/IService1/WebVratiGrupeUKojimaNije" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VratiGrupeUKojimaJeste">
+      <soap:operation soapAction="http://tempuri.org/IService1/VratiGrupeUKojimaJeste" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/Servis/Service1/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
